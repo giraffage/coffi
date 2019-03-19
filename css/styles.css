@@ -14,13 +14,14 @@ body {
 
 .navbar {
     font-size: 18px;
-    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: black;
+    border: 10px solid rgba(30, 30, 30, 0.2);
     padding-bottom: 10px;
 }
 
 .main-nav {
     list-style-type: none;
+    display: none;
 }
 
 .nav-links,
@@ -52,6 +53,10 @@ body {
     font-size: 24px;
 }
 
+.active {
+    display: block;
+}
+
 /* hiding menu, not visible by default */
 .main-nav {
     list-style-type: none;
@@ -79,5 +84,26 @@ body {
       margin-right: 30px;
       flex-direction: row;
       justify-content: flex-end;
+}
+
+.main-nav li {
+      margin: 0;
+}
+
+.nav-links {
+      margin-left: 40px;
+}
+
+.logo {
+      margin-top: 0;
+}
+
+.navbar-toggle {
+      display: none;
+}
+
+.logo:hover,
+.nav-links:hover {
+      color: rgba(255, 255, 255, 1);
 }
 }
