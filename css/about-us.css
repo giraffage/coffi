@@ -7,6 +7,8 @@ h1 {
   font-size: 3em;
   font-family: Helvetica;
   color: rgb(204,241,255);
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 h2 {
@@ -14,6 +16,8 @@ h2 {
   font-family: Helvetica;
   font-weight: normal;
   color: rgb(204,241,255);
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 div.title {
@@ -23,17 +27,17 @@ div.title {
   margin-top: 10%;
 }
 
-
-
-
 div.contrast {
   background-color: rgb(204,241,255);
   color: rgb(0,37,51);
   display: flex;
-  justify-content: left;
+  text-align: justify;
   align-items: center;
   flex-direction: column;
   font-family: Helvetica;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
 }
 
 .demoimage {
@@ -48,7 +52,7 @@ div.contrast {
 
 .demotext {
   width: 94%
-  float: left;
+  text-align: justify;
   margin-top: 10%;
   margin-bottom: 10%;
   margin-right: 10%;
@@ -77,6 +81,6 @@ div.contrast {
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left: 5%;
-  border-radius: 130%;
+  border-radius: 200px;
 
 }
