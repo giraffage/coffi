@@ -30,7 +30,7 @@ div.contrast {
 background-color: rgb(204,241,255);
 color: rgb(0,37,51);
 display: flex;
-justify-content: center;
+justify-content: left;
 align-items: center;
 flex-direction: column;
 font-family: arial;
@@ -50,6 +50,11 @@ font-family: arial;
   float: left;
 
 }
+#democontainer {border: 2px solid rgb(0,37,51);
+  border-radius: 10px ;
+  margin-right: 10px;
+  margin-left: 5px;
+}
 
 #bottom {
   width: 1000px ;
@@ -66,8 +71,15 @@ font-family: arial;
      border-radius: 200px;
   }
 
-
 #demotext2 {
   width: 94%
   float: left;
+}
+
+#democontainer2 {border: 2px solid rgb(0,37,51);
+  border-radius: 10px ;
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
