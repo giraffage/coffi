@@ -36,7 +36,7 @@ flex-direction: column;
 font-family: Helvetica;
 }
 
-#demoimage {
+.demoimage {
   float: left ;
    display: left;
    padding: 0px;
@@ -45,25 +45,25 @@ font-family: Helvetica;
 
 }
 
-#demotext {
+.demotext {
   width: 94%
   float: left;
 
 }
-#democontainer {border: 2px solid rgb(0,37,51);
+.democontainer {border: 2px solid rgb(0,37,51);
   border-radius: 10px ;
   margin-right: 10px;
   margin-left: 5px;
 }
 
-#bottom {
+.bottom {
   width: 1000px ;
   max-width: 100% ;
   margin-left: 20px ;
   margin-right: 15px;
 }
 
-#demoimage2 {
+.demoimage2 {
   float: left ;
      display: left;
      padding: 0px;
@@ -71,12 +71,12 @@ font-family: Helvetica;
      border-radius: 200px;
   }
 
-#demotext2 {
+.demotext2 {
   width: 94%
   float: left;
 }
 
-#democontainer2 {border: 2px solid rgb(0,37,51);
+.democontainer2 {border: 2px solid rgb(0,37,51);
   border-radius: 10px ;
   margin-right: 10px;
   margin-left: 5px;
