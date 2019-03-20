@@ -17,7 +17,7 @@ h2 {
 }
 
 div.title {
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: bold;
   font
 }
@@ -42,6 +42,11 @@ font-family: arial;
 
 #demoimage {
   float: left ;
+}
+
+#demotext {
+  width: 94%
+  float: left;
 }
 
 #democontainer {
