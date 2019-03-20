@@ -17,18 +17,14 @@ h2 {
 }
 
 div.title {
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: bold;
-  font
+  text-decoration-line: underline;
+  margin-top: 10px;
 }
 
 
-img {
-   display: left;
-   padding: 0px;
-   margin: 0 auto;
-   border-radius: 200px;
-}
+
 
 div.contrast {
 background-color: rgb(204,241,255);
@@ -42,11 +38,17 @@ font-family: arial;
 
 #demoimage {
   float: left ;
+   display: left;
+   padding: 0px;
+   margin: 0 auto;
+   border-radius: 200px;
+
 }
 
 #demotext {
   width: 94%
   float: left;
+
 }
 
 #bottom {
@@ -58,7 +60,12 @@ font-family: arial;
 
 #demoimage2 {
   float: left ;
-}
+     display: left;
+     padding: 0px;
+     margin: 0 auto;
+     border-radius: 200px;
+  }
+
 
 #demotext2 {
   width: 94%
