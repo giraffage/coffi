@@ -49,6 +49,12 @@ div.contrast {
   margin-bottom: 2%;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .demoimage {
   float: flex;
   padding: 30px;
