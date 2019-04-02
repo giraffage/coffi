@@ -52,28 +52,36 @@ div.contrast {
 .container {
   display: flex;
   flex-direction: column;
-
 }
 
 .demoimage {
-  float: flex;
-  padding: 30px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
+  flex-basis: auto;
+  margin: 0 5%;
   border-radius: 130px;
+  background-size:cover;
+  min-width: 150px;
+  height: 150px;
+}
 
+.demoimage1 {
+background-image: url('../images/photo-of-izzy.jpg');
+}
+
+.demoimage2 {
+background-image: url('../images/Maui_2011_23 2-i.jpg');
 }
 
 .demotext {
-  width: 94%
   text-align: justify;
   margin-top: 10%;
   margin-bottom: 10%;
   margin-right: 10%;
 
 }
-.democontainer {border: 1px solid rgb(0,37,51);
+.democontainer {
+
+  align-items: center;
+  border: 1px solid rgb(0,37,51);
   display: flex;
   border-radius: 10px;
   margin-right: 10px;
@@ -89,14 +97,6 @@ div.contrast {
   margin-left: 20px;
   margin-right: 15px;
 }
-
-.demoimage2 {
-  float: flex;
-  padding: 30px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  border-radius: 200px;
 
 }
 
