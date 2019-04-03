@@ -10,16 +10,20 @@
   <h1> Contact form </h1>
   <h2> Please feel free to reach out for any questions, problems or
     suggestions... or even just to say hi! </h2>
-    <div class="container">
-      <p><input type="Mr/Mrs/Miss/Other" placeholder="Mr/Mrs/Miss/Other"></p>
-      <p><input type="Cafe regarding" placeholder="Cafe regarding"></p>
-      <p><input type="Name" placeholder="Name.."> </p>
-      <p><input type="Email" placeholder="Email"></p>
-      <textarea type="Comment" placeholder="Comments"></textarea>
-      <p><input type="First name" placeholder="First name"></p>
-      <p><input type="Last name" placeholder="Last name"></p>
-      <p><input type="Cafe" placeholder="Cafe"></p>
-
+    <form action="action_page.php">
+      <div class="container">
+        <p><input type="Mr/Mrs/Miss/Other" placeholder="Mr/Mrs/Miss/Other"></p>
+        <p><input type="Cafe regarding" placeholder="Cafe regarding"></p>
+        <p><input type="Name" placeholder="Name.."> </p>
+        <p><input type="Email" placeholder="Email"></p>
+        <textarea type="Comment" placeholder="Comments"></textarea>
+        <p><input type="First name" placeholder="First name"></p>
+        <p><input type="Last name" placeholder="Last name"></p>
+        <p><input type="Cafe" placeholder="Cafe"></p>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
       <form action="action_page.php">
         <div class="row">
           <div class="col-25">
@@ -34,7 +38,10 @@
             <label for="lname">Last Name</label>
           </div>
           <div class="col-75">
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name..">
           </div>
         </div>
         <div class="row">
@@ -55,13 +62,67 @@
             <label for="subject">Subject</label>
           </div>
           <div class="col-75">
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height:200px"></textarea>
           </div>
         </div>
         <div class="row">
           <input type="submit" value="Submit">
         </div>
       </form>
-    </div>
-  </body>
-  </html>
+
+      <form action="action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="Cafe">Cafe</label>
+          </div>
+          <div class="col-75">
+            <select id="Cafe" name="Cafe">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="United Kingdom">United Kingdom</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </body>
+    </html>
