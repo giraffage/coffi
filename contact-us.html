@@ -12,6 +12,7 @@
     suggestions... or even just to say hi! </h2>
     <form action="action_page.php">
       <div class="container">
+        <p class="contact">Contact</p>
         <p><input type="Mr/Mrs/Miss/Other" placeholder="Mr/Mrs/Miss/Other"></p>
         <p><input type="Cafe regarding" placeholder="Cafe regarding"></p>
         <p><input type="Name" placeholder="Name.."> </p>
@@ -24,105 +25,62 @@
           <input type="submit" value="Submit">
         </div>
       </form>
-      <form action="action_page.php">
+    </div>
+    <form action="action_page.php">
+      <div class="container">
         <div class="row">
           <div class="col-25">
-            <label for="fname">First Name</label>
+            <label for="fname">The suggestion</label>
           </div>
-          <div class="col-75">
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          </div>
-        </div>
-        <div class="row">
           <div class="col-25">
-            <label for="lname">Last Name</label>
-          </div>
-          <div class="col-75">
-            <input type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="Cafe">Cafe</label>
-          </div>
-          <div class="col-75">
-            <select id="Cafe" name="Cafe">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-              <option value="United Kingdom">United Kingdom</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="subject">Subject</label>
-          </div>
-          <div class="col-75">
-            <textarea id="subject"
-            name="subject"
-            placeholder="Write something.."
-            style="height:200px"></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <input type="submit" value="Submit">
-        </div>
-      </form>
-
-      <form action="action_page.php">
-        <div class="row">
-          <div class="col-25">
-            <label for="fname">First Name</label>
+            <label for="fname"></label>
           </div>
           <div class="col-75">
             <input type="text"
             id="fname"
             name="firstname"
-            placeholder="Your name..">
+            placeholder="Your full name..">
           </div>
         </div>
         <div class="row">
           <div class="col-25">
-            <label for="lname">Last Name</label>
+            <label for="lname"></label>
           </div>
           <div class="col-75">
             <input type="text"
             id="lname"
             name="lastname"
-            placeholder="Your last name..">
+            placeholder="Your email..">
           </div>
         </div>
         <div class="row">
           <div class="col-25">
-            <label for="Cafe">Cafe</label>
+            <label for="Cafe">The location type</label>
           </div>
           <div class="col-75">
             <select id="Cafe" name="Cafe">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-              <option value="United Kingdom">United Kingdom</option>
+              <option value="Cafe1">Cafe (open late; until at least 10pm)</option>
+              <option value="Cafe2">Cafe (open regular hours; anything before 10pm)</option>
+              <option value="Resto">Restaurant</option>
+              <option value="Other">Other</option>
             </select>
           </div>
         </div>
         <div class="row">
           <div class="col-25">
-            <label for="subject">Subject</label>
+            <label for="subject">The cafe</label>
           </div>
           <div class="col-75">
             <textarea id="subject"
             name="subject"
-            placeholder="Write something.."
+            placeholder="Your cafe (please indicate)"
             style="height:200px"></textarea>
           </div>
         </div>
         <div class="row">
           <input type="submit" value="Submit">
         </div>
-      </form>
-    </body>
-    </html>
+      </div>
+    </form>
+  </body>
+  </html>

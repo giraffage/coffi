@@ -5,22 +5,26 @@ html{
 
 h1 {
   font-size: 3em;
+  margin: 0 5%;
   font-family: arial;
   color: rgb(204,241,255);
+  margin-bottom: 20px;
 }
 
 h2 {
   font-size: 1.5em;
+  margin: 0 5%;
   font-family: arial;
   font-weight: normal;
   color: rgb(204,241,255);
+  margin-bottom: 20px;
 }
 
 input[type=text] {
-    //styling
+  //styling
 }
 input[name=html_name] {
-    //styling
+  //styling
 }
 
 /* Style inputs, select elements and textareas */
@@ -52,7 +56,9 @@ input[type=submit] {
 
 /* Style the container */
 .container {
-  border-radius: 5px;
+  border-radius: 10px;
+  margin: 0 5%;
+  margin-bottom: 10px;
   background-color: #f2f2f2;
   padding: 20px;
 }
