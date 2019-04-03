@@ -1,4 +1,14 @@
 
+div {
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 10px;
+  text-align: justify;
+  font-weight: 300;
+  line-height: 60px;
+  font: Helvetica;
+}
+
 html{
   background-color: rgb(0,37,51);
 }
@@ -39,26 +49,39 @@ div.contrast {
   margin-right: 2%;
   margin-bottom: 2%;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+}
 
 .demoimage {
-  float: flex;
-  padding: 30px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  border-radius: 130%;
+  flex-basis: auto;
+  margin: 0 5%;
+  border-radius: 130px;
+  background-size:cover;
+  min-width: 150px;
+  height: 150px;
+}
 
+.demoimage1 {
+background-image: url('../images/photo-of-izzy.jpg');
+}
+
+.demoimage2 {
+background-image: url('../images/Maui_2011_23 2-i.jpg');
 }
 
 .demotext {
-  width: 94%
   text-align: justify;
   margin-top: 10%;
   margin-bottom: 10%;
   margin-right: 10%;
 
 }
-.democontainer {border: 1px solid rgb(0,37,51);
+.democontainer {
+
+  align-items: center;
+  border: 1px solid rgb(0,37,51);
   display: flex;
   border-radius: 10px;
   margin-right: 10px;
@@ -75,12 +98,10 @@ div.contrast {
   margin-right: 15px;
 }
 
-.demoimage2 {
-  float: flex;
-  padding: 30px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  border-radius: 200px;
+}
+
+.contactus {border: 1px solid rgb(0,37,51);
+  font: Helvetica;
+  color:  rgb(204,241,255);
 
 }
