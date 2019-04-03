@@ -5,7 +5,7 @@ div {
   margin-bottom: 10px;
   text-align: justify;
   font-weight: 300;
-  line-height: 60px;
+  line-height: 40px;
   font: Helvetica;
 }
 
@@ -34,7 +34,7 @@ div.title {
   font-size: 1.5em;
   font-weight: bold;
   text-decoration-line: underline;
-  margin-top: 10%;
+  margin-top: 4%;
   color: rgb(204,241,255)
 }
 
@@ -74,8 +74,8 @@ background-image: url('../images/Maui_2011_23 2-i.jpg');
 
 .demotext {
   text-align: justify;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 4%;
+  margin-bottom: 4%;
   margin-right: 10%;
 
 }
@@ -83,13 +83,13 @@ background-image: url('../images/Maui_2011_23 2-i.jpg');
 
   align-items: center;
   border: 1px solid rgb(204,241,255);
-  color: 204,241,255;
+  background-color: rgb(204,241,255);
   display: flex;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-right: 10px;
   margin-left: 5px;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-top: 3%;
+  margin-bottom: 8%;
 
 }
 
