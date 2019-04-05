@@ -5,48 +5,48 @@
   <title></title>
   <!-- Bootstrap -->
   <link rel="stylesheet"
-  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-  crossorigin="anonymous">
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"></script>
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-  crossorigin="anonymous"></script>
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-  crossorigin="anonymous"></script>
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
 
   <!-- Custom styles-->
   <link href="css/styles.css" rel="stylesheet">
 
   <!-- Jquery -->
   <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
 
   <!-- Leaflet CSS (map) -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
-  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-  crossorigin=""/>
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
 
   <!-- Make sure you put this AFTER Leaflet's CSS -->
   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-  crossorigin=""></script>
+          integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+          crossorigin=""></script>
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarTogglerDemo03"
-    aria-controls="navbarTogglerDemo03"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <a class="navbar-brand" href="#">C( )ffi</a>
@@ -63,7 +63,7 @@
           Filters
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="index.html">West London</a>
+          <a class="dropdown-item" href="# onclick=filterMapTo('west'); return false">West London</a>
           <a class="dropdown-item" href="index.html">Another action</a>
           <a class="dropdown-item" href="index.html">Something else here</a>
           <a class="dropdown-item" href="index.html">Action</a>
@@ -85,15 +85,57 @@
 </nav>
 <div id="mapid" style="width: 100%; height: 600vw;"></div>
 <script>
-var map = L.map('mapid').setView([-0.127654, 51.507983], 13);
+  const coffeeVenues = [
+    {name: 'Hubbard & Bell', addr:'199 - 206 High Holborn, London WC1V 7BW',
+      times:'Sun-Tues 7am - 12am, Wed-Sat 7am–2am', site:'http://www.hubbardandbell.com',
+      openLate:true, region:'c', latlon[123,456]},
+    {name: 'Husk', addr:'649-651 Commercial Road, Limehouse, London E14 7LW',
+      times:'Mon 9am-6pm, Tue-Thu 9am-8pm, Fri 9am-6pm, Sat 10am-5pm', site:'http://www.huskcoffee.com/',
+      openLate:false, region:'e', latlon[123,456]},
+    {name: 'Hubbard & Bell', addr:'199 - 206 High Holborn, London WC1V 7BW',
+      times:'Sun-Tues 7am - 12am, Wed-Sat 7am–2am', site:'http://www.hubbardandbell.com',
+      openLate:true, region:'c', latlon[123,456]}
+    {name: 'Husk', addr:'649-651 Commercial Road, Limehouse, London E14 7LW',
+      times:'Mon 9am-6pm, Tue-Thu 9am-8pm, Fri 9am-6pm, Sat 10am-5pm', site:'http://www.huskcoffee.com/',
+      openLate:false, region:'e', latlon[123,456]}
+    {name: 'Hubbard & Bell', addr:'199 - 206 High Holborn, London WC1V 7BW',
+      times:'Sun-Tues 7am - 12am, Wed-Sat 7am–2am', site:'http://www.hubbardandbell.com',
+      openLate:true, region:'c', latlon[123,456]},
+    {name: 'Husk', addr:'649-651 Commercial Road, Limehouse, London E14 7LW',
+      times:'Mon 9am-6pm, Tue-Thu 9am-8pm, Fri 9am-6pm, Sat 10am-5pm', site:'http://www.huskcoffee.com/',
+      openLate:false, region:'e', latlon[123,456]},
+    {name: 'Hubbard & Bell', addr:'199 - 206 High Holborn, London WC1V 7BW',
+      times:'Sun-Tues 7am - 12am, Wed-Sat 7am–2am', site:'http://www.hubbardandbell.com',
+      openLate:true, region:'c', latlon[123,456]}
+    {name: 'Husk', addr:'649-651 Commercial Road, Limehouse, London E14 7LW',
+      times:'Mon 9am-6pm, Tue-Thu 9am-8pm, Fri 9am-6pm, Sat 10am-5pm', site:'http://www.huskcoffee.com/',
+      openLate:false, region:'e', latlon[123,456]}
+    {name: 'Hubbard & Bell', addr:'199 - 206 High Holborn, London WC1V 7BW',
+      times:'Sun-Tues 7am - 12am, Wed-Sat 7am–2am', site:'http://www.hubbardandbell.com',
+      openLate:true, region:'c', latlon[123,456]},
+    {name: 'Husk', addr:'649-651 Commercial Road, Limehouse, London E14 7LW',
+      times:'Mon 9am-6pm, Tue-Thu 9am-8pm, Fri 9am-6pm, Sat 10am-5pm', site:'http://www.huskcoffee.com/',
+      openLate:false, region:'e', latlon[123,456]},
+    {name: 'Hubbard & Bell', addr:'199 - 206 High Holborn, London WC1V 7BW',
+      times:'Sun-Tues 7am - 12am, Wed-Sat 7am–2am', site:'http://www.hubbardandbell.com',
+      openLate:true, region:'c', latlon[123,456]}
+    {name: 'Husk', addr:'649-651 Commercial Road, Limehouse, London E14 7LW',
+      times:'Mon 9am-6pm, Tue-Thu 9am-8pm, Fri 9am-6pm, Sat 10am-5pm', site:'http://www.huskcoffee.com/',
+      openLate:false, region:'e', latlon[123,456]}
+  ];
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  var map = L.map('mapid').setView([-0.127654, 51.507983], 13);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+  }).addTo(map);
 
-L.marker([51.517748, -0.120626]).addTo(map)
-        .bindPopup('Hubbard & Bell<br> 199 - 206 High Holborn, London WC1V 7BW<br> Sun-Tues 7am - 12am, Wed-Sat 7am–2am<br> http://www.hubbardandbell.com/.')
-        .openPopup();
+  coffeeVenues.forEach(function(coffeeVenue) {
+    if (coffeeVenue.region == curFilter.region && coffeeVenue.openLate == curFilter.openLate) {
+
+      L.marker([51.517748, -0.120626]).addTo(map)
+              .bindPopup('Hubbard & Bell<br> 199 - 206 High Holborn, London WC1V 7BW<br> Sun-Tues 7am - 12am, Wed-Sat 7am–2am<br> http://www.hubbardandbell.com/.')
+              .openPopup();}
 </script>
 </body>
 </html>
