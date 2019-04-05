@@ -68,7 +68,7 @@
           <a class="dropdown-item" href="# onclick=curFilter.region='c'; reFilter(); return false">Central London</a>
           <a class="dropdown-item" href="# onclick=curFilter.region='n'; reFilter(); return false">North London</a>
           <a class="dropdown-item" href="# onclick=curFilter.region='se'; reFilter(); return false">South East London</a>
-          <a class="dropdown-item" href="# onclick=curFilter.openLate:true; reFilter(); return false">Open Late</a>
+          <a class="dropdown-item" href="# onclick=curFilter.openLate=true; reFilter(); return false">Open Late</a>
           <a class="dropdown-item" href="# onclick=curFilter.region='w'; reFilter(); return false">Action</a>
           <a class="dropdown-item" href="# onclick=curFilter.region='w'; reFilter(); return false">Another action</a>
           <a class="dropdown-item" href="# onclick=curFilter.region='w'; reFilter(); return false">Something else here</a>
@@ -141,7 +141,10 @@
       openLate:true, region:'n', latlon: [51.531303, -0.124423]}
   ];
 
-  var map = L.map('mapid').setView([-0.127654, 51.507983], 13);
+  var curFilter = {region:'c', openLate:true};
+
+
+  var map = L.map('mapid').setView([51.507983, -0.127654], 13);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -153,10 +156,6 @@
       L.marker(coffeeVenue.latlon).addTo(map).bindPopup(coffeeVenue.name+'<br/>'+coffeeVenue.addr+'<br/>'+coffeeVenue.times+'<br/>'+coffeeVenue.site).openPopup();
     }
   });
-
-  var curFilter = {region:'c', openLate:true};
-
-
 
 
 </script>
