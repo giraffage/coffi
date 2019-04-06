@@ -141,14 +141,17 @@
       openLate:true, region:'n', latlon: [51.531303, -0.124423]}
   ];
 
-  var curFilter = {region:'c', openLate:true};
 
+  var curFilter =
 
-  var map = L.map('mapid').setView([51.507983, -0.127654], 13);
+  var map = L.map('mapid').setView([51.507353, -0.127758], 10);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
+
+
+  var marker = L.marker([51.5, -0.09]).addTo(mymap);
 
 
   coffeeVenues.forEach(function(coffeeVenue) {
