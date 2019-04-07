@@ -155,18 +155,18 @@
     markerLayer.clearLayers();
     coffeeVenues.forEach(function(coffeeVenue) {
       if (
-        ((curFilter.region === undefined) || (coffeeVenue.region == curFilter.region))
-        &&
-        ((curFilter.openLate === undefined) || (coffeeVenue.openLate == curFilter.openLate))
+              ((curFilter.region === undefined) || (coffeeVenue.region == curFilter.region))
+              &&
+              ((curFilter.openLate === undefined) || (coffeeVenue.openLate == curFilter.openLate))
       ) {
         L.marker(coffeeVenue.latlon)
-          .addTo(markerLayer)
-          .bindPopup(
-            coffeeVenue.name+'<br/>'
-            +coffeeVenue.addr+'<br/>'
-            +coffeeVenue.times+'<br/>'
-            +coffeeVenue.site
-          );
+                .addTo(markerLayer)
+                .bindPopup(
+                coffeeVenue.name+'<br/>'
+                +coffeeVenue.addr+'<br/>'
+                +coffeeVenue.times+'<br/>'
+                +coffeeVenue.site
+                        );
       }
     });
   }
