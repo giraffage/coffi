@@ -1,3 +1,12 @@
+.fonts {
+  font-size: 0.8em;
+  font-family: Helvetica Neue;
+  color: black;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+}
+
 div {
   margin: 0 auto;
   position: relative;
@@ -5,7 +14,6 @@ div {
   text-align: justify;
   font-weight: 300;
   line-height: 60px;
-  font: Helvetica;
 }
 
 html{
@@ -14,7 +22,6 @@ html{
 
 h1 {
   font-size: 3em;
-  font-family: Helvetica;
   color: rgb(204,241,255);
   margin-left: 2%;
   margin-right: 2%;
@@ -22,7 +29,6 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  font-family: Helvetica;
   font-weight: normal;
   color: rgb(204,241,255);
   margin-left: 2%;
@@ -43,7 +49,6 @@ div.contrast {
   text-align: justify;
   align-items: center;
   flex-direction: column;
-  font-family: Helvetica;
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 2%;
@@ -101,7 +106,6 @@ background-image: url('../images/Maui_2011_23 2-i.jpg');
 }
 
 .contactus {border: 1px solid rgb(0,37,51);
-  font: Helvetica;
   color:  rgb(204,241,255);
 
 }
