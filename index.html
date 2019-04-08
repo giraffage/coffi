@@ -64,7 +64,7 @@
             Filters
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#" onclick="curFilter.region='w'; reFilter(); return false">West London</a>
+            <input type="checkbox" <a class="dropdown-item"  href="#" onclick="curFilter.region='w'; reFilter(); return false">West London</a>
             <a class="dropdown-item" href="#" onclick="curFilter.region='e'; reFilter(); return false">East London</a>
             <a class="dropdown-item" href="#" onclick="curFilter.region='c'; reFilter(); return false">Central London</a>
             <a class="dropdown-item" href="#" onclick="curFilter.region='n'; reFilter(); return false">North London</a>
@@ -73,6 +73,9 @@
             <hr/>
             <a class="dropdown-item" href="#" onclick="curFilter.openLate=true; reFilter(); return false">Open Late</a>
             <a class="dropdown-item" href="#" onclick="curFilter.openLate=undefined; reFilter(); return false">Open any time</a>
+          <hr/>
+            <a class="dropdown-item" href="#" onclick="curFilter.socketsAvailable=true; reFilter(); return false">Sockets Available</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.socketsAvailable=undefined; reFilter(); return false">Sockets Available</a>
           </div>
         </li>
         <li class="nav-item">
@@ -90,62 +93,62 @@
   const coffeeVenues = [
     {name: 'Hubbard & Bell', addr:'199 - 206 High Holborn, London WC1V 7BW',
       times:'Sun-Tues 7am-12am, Wed-Sat 7am–2am', site:'http://www.hubbardandbell.com',
-      openLate:true, region:'c', latlon: [51.517225, -0.122170]},
+      openLate:true, socketsAvailable:true, region:'c', latlon: [51.517225, -0.122170]},
     {name: 'Camden Coffee - Hogarth House', addr:'136 High Holborn, London WC1V 6P',
-      times:'N/A', openLate:false, region:'c', latlon: [51.517507, -0.122244]},
+      times:'N/A', openLate:false, socketsAvailable:true, region:'c', latlon: [51.517507, -0.122244]},
     {name: 'Husk', addr:'649-651 Commercial Road, Limehouse, London E14 7LW',
       times:'Mon 9am-6pm, Tue-Thu 9am-8pm, Fri 9am-6pm, Sat 10am-5pm', site:'http://www.huskcoffee.com/',
-      openLate:false, region:'e', latlon: [51.512953, -0.038305]},
+      openLate:false, socketsAvailable:true, region:'e', latlon: [51.512953, -0.038305]},
     {name: 'Antipode', addr:'28 Fulham Palace Rd, Hammersmith, London W6 9PH',
       times:'Mon-Fr 7am–6pm, Sat 8am-6pm, Sun 9am-6pm', site:'https://antipodelondon.co.uk/',
-      openLate:false, region:'w', latlon: [51.491015, -0.223928]},
+      openLate:false, socketsAvailable:false, region:'w', latlon: [51.491015, -0.223928]},
     {name: 'Bush Cafe Bar', addr:'7 Uxbridge Rd, Shepherds Bush, London W12 8LJ',
       times:'Mon-Sat 10am-11pm, Sun Closed', site:'https://www.bushtheatre.co.uk/your-visit/library-bar/',
-      openLate:true, region:'w', latlon: [51.505244, -0.225804]},
+      openLate:true, socketsAvailable:false, region:'w', latlon: [51.505244, -0.225804]},
     {name: 'Caffè Nero', addr:'1 Wrights Ln, Kensington, London W8 5RY',
       times:'Mon-Fr 6:30am-6:30pm, Sat 7:30am–6pm, Sun 7:30am-5pm', site:'https://caffenero.com/uk/stores/kensington-arcade-562/',
-      openLate:false, region:'w', latlon: [51.500600, -0.193044]},
+      openLate:false, socketsAvailable:false, region:'w', latlon: [51.500600, -0.193044]},
     {name: 'Starbucks Coffee', addr:'25A Kensington High St, Kensington, London W8 5NP',
       times:'Mon-Fr 6:30am-8pm, Sat-Sun 7am-8pm', site:'https://www.starbucks.co.uk/store-locator?map=51.503112,-0.195058,15z',
-      openLate:false, region:'w', latlon: [51.502284, -0.188540]},
+      openLate:false, socketsAvailable:false, region:'w', latlon: [51.502284, -0.188540]},
     {name: 'Kitchen & Pantry', addr:'14 Elgin Cres, London W11 2HX',
-      times:'Mon-Sun 8am-8pm', openLate:false, region:'w', latlon: [51.515090, -0.205306]},
+      times:'Mon-Sun 8am-8pm', openLate:false, socketsAvailable:false, region:'w', latlon: [51.515090, -0.205306]},
     {name: 'Coffee Plant', addr:'180 Portobello Rd, Notting Hill, London W11 2EB',
       times:'Mon-Fr 7am-5:15pm, Sat 7am-6pm, Sun 8am-5:15pm', site:'http://www.coffee.uk.com/',
-      openLate:false, region:'w', latlon: [51.515780, -0.204720]},
+      openLate:false, socketsAvailable:false, region:'w', latlon: [51.515780, -0.204720]},
     {name: 'Bluebelles of Portobello', addr:'320 Portobello Rd, London W10 5RU',
       times:'Mon-Fr 8:30am-4:30pm, Sat 9am-4:30pm', site:'https://www.facebook.com/BluebellesCafe/',
-      openLate:false, region:'w', latlon: [51.521360, -0.209972]},
+      openLate:false, socketsAvailable:true, region:'w', latlon: [51.521360, -0.209972]},
     {name: 'Starbucks Coffee', addr:'2/3 Conduit St, Mayfair, London W1S 2BX',
       times:'Mon-Tues 6am-10pm, Wed-Fr 6am-10:30pm, Sat 6am-11pm, Sun 7am-10pm', site:'https://www.starbucks.co.uk/store-locator/store/18757/conduit-street-2-3-conduit-street-london-eng-w-1-s-2-xb-gb',
-      openLate:true, region:'c', latlon: [51.513012, -0.141164]},
+      openLate:true, socketsAvailable:true, region:'c', latlon: [51.513012, -0.141164]},
     {name: 'Covent Garden Grind', addr:'42 Maiden Ln, Covent Garden, London WC2E 7LJ',
       times:'Mon-Wed 7:30am-10pm, Thurs-Fr 7:30am-11pm, Sat 9am-12am, Sun 9am-7pm', site:'https://grind.co.uk/pages/covent-garden-grind',
-      openLate:true, region:'c', latlon: [51.511049, -0.122602]},
+      openLate:true, socketsAvailable:false, region:'c', latlon: [51.511049, -0.122602]},
     {name: 'Planet Organic', addr:'22 Torrington Pl, Bloomsbury, London WC1E 7HJ',
       times:'Mon-Fr 7:30am-9pm, Sat 8am-8pm, Sun 12pm-6pm', site:'https://www.planetorganic.com/stores/torrington-place-london-wc1e/',
-      openLate:false, region:'c', latlon: [51.521722, -0.134194]},
+      openLate:false, socketsAvailable:true, region:'c', latlon: [51.521722, -0.134194]},
     {name: 'Dillons Coffee', addr:'Waterstones, 82 Gower St, Bloomsbury, London WC1E 6EQ',
       times:'Mon-Fr 8:30am-9pm, Sat 8:30am-8pm, Sun 12pm-6pm', site:'https://www.waterstones.com/bookshops/gower-street',
       openLate:false, region:'c', latlon: [51.522483, -0.131833]},
     {name: 'Shoreditch Grind', addr:'213 Old St, London EC1V 9NR',
       times:'Mon-Thurs 7am-11pm, Fr 7am-1am, Sat 8am-1am, Sun 9am-7pm', site:'https://grind.co.uk/pages/shoreditch-grind',
-      openLate:true, region:'e', latlon: [51.525990, -0.088143]},
+      openLate:true, socketsAvailable:false, region:'e', latlon: [51.525990, -0.088143]},
     {name: 'Albion Shoreditch', addr:'2-4 Boundary St, Shoreditch, London E2 7DD',
       times:'Mon-Sun 8am-11pm', site:'http://www.boundary.london/albion',
-      openLate:false, region:'e', latlon: [51.524542, -0.076270]},
+      openLate:false, socketsAvailable:true, region:'e', latlon: [51.524542, -0.076270]},
     {name: 'Close-Up Cinema', addr:'97 Sclater St, London E1 6HR',
       times:'Mon-Sun 12pm-11:30pm', site:'https://www.closeupfilmcentre.com/',
-      openLate:true, region:'e', latlon: [51.523626, -0.072070]},
+      openLate:true, socketsAvailable:false, region:'e', latlon: [51.523626, -0.072070]},
     {name: 'London Grind', addr:'2 London Bridge, London SE1 9RA',
       times:'Mon-Thurs 7am-12am, Fr 7am-1am, Sat 8am-1am, Sun 9am-7pm', site:'https://grind.co.uk/pages/london-grind',
-      openLate:true, region:'se', latlon: [51.506570, -0.088435]},
+      openLate:true, socketsAvailable:false, region:'se', latlon: [51.506570, -0.088435]},
     {name: 'Starbucks Kings Cross Station', addr:'Euston Road, Ground Concourse Unit, 11aLondon, London N1 9AL',
       times:'Mon-Sat 5:30am-11pm', site:'https://www.starbucks.co.uk/store-locator/store/87135/kings-cross-station-concourse-euston-road-london-eng-n-1-9-al-gb',
-      openLate:true, region:'n', latlon: [51.531303, -0.124423]},
+      openLate:true, socketsAvailable:false, region:'n', latlon: [51.531303, -0.124423]},
     {name: 'The CoffeeWorks Project', addr:'96-98 Islington High St, The Angel, London N1 8EG',
       times:'Mon-Fr 7:30am-6pm, Sat-Sun 9am–6pm', site:'https://coffeeworksproject.com/',
-      openLate:false, region:'n', latlon: [51.534174, -0.104523]}
+      openLate:false, socketsAvailable:true, region:'n', latlon: [51.534174, -0.104523]}
   ];
 
   var curFilter = {};
@@ -165,6 +168,8 @@
               ((curFilter.region === undefined) || (coffeeVenue.region == curFilter.region))
               &&
               ((curFilter.openLate === undefined) || (coffeeVenue.openLate == curFilter.openLate))
+              &&
+              ((curFilter.socketsAvailable === undefined) || (coffeeVenue.socketsAvailable == curFilter.socketsAvailable))
       ) {
         L.marker(coffeeVenue.latlon)
                 .addTo(markerLayer)
