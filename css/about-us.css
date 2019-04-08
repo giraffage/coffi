@@ -17,8 +17,8 @@ h1 {
   font-size: 3em;
   font-family: Helvetica;
   color: rgb(204,241,255);
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
 h2 {
@@ -26,8 +26,8 @@ h2 {
   font-family: Helvetica;
   font-weight: normal;
   color: rgb(204,241,255);
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
 div.title {
