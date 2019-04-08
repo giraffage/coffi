@@ -31,6 +31,12 @@ h2 {
 }
 
 div.title {
+  color: rgb(204,241,255);
+  display: flex;
+  font-family: Helvetica;
+  text-align: justify;
+  align-items: center;
+  flex-direction: column;
   font-size: 1.5em;
   font-weight: bold;
   text-decoration-line: underline;
@@ -38,7 +44,7 @@ div.title {
 }
 
 div.contrast {
-  background-color: rgb(204,241,255);
+  background-color: rgb(0,37,51);
   color: rgb(0,37,51);
   display: flex;
   text-align: justify;
@@ -50,6 +56,7 @@ div.contrast {
   margin-bottom: 2%;
 }
 .container {
+  background-color: rgb(204,241,255);
   display: flex;
   flex-direction: column;
 }
@@ -79,7 +86,7 @@ background-image: url('../images/Maui_2011_23 2-i.jpg');
 
 }
 .democontainer {
-
+  background-color: rgb(204,241,255);
   align-items: center;
   border: 1px solid rgb(0,37,51);
   display: flex;
