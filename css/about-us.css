@@ -6,7 +6,6 @@ div {
   text-align: justify;
   font-weight: 300;
   line-height: 60px;
-  font: Helvetica;
 }
 
 html{
@@ -14,16 +13,14 @@ html{
 }
 
 h1 {
-  font-size: 3em;
-  font-family: Helvetica;
+  font-size: 2.5em;
   color: rgb(204,241,255);
   margin-left: 10px;
   margin-right: 5px;
 }
 
 h2 {
-  font-size: 1.5em;
-  font-family: Helvetica;
+  font-size: 1.1em;
   font-weight: normal;
   color: rgb(204,241,255);
   margin-left: 10px;
@@ -33,14 +30,12 @@ h2 {
 div.title {
   color: rgb(204,241,255);
   display: flex;
-  font-family: Helvetica;
   text-align: justify;
   align-items: center;
   flex-direction: column;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: bold;
-  text-decoration-line: underline;
-  margin-top: 10%;
+  margin-top: 2%;
 }
 
 div.contrast {
@@ -50,11 +45,19 @@ div.contrast {
   text-align: justify;
   align-items: center;
   flex-direction: column;
-  font-family: Helvetica;
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 2%;
 }
+
+/* changing the font for all contact form labels */
+.fonts {
+  font-family: Helvetica Neue;
+  color: black;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 .container {
   background-color: rgb(204,241,255);
   display: flex;
@@ -71,11 +74,11 @@ div.contrast {
 }
 
 .demoimage1 {
-background-image: url('../images/photo-of-izzy.jpg');
+  background-image: url('../images/photo-of-izzy.jpg');
 }
 
 .demoimage2 {
-background-image: url('../images/Maui_2011_23 2-i.jpg');
+  background-image: url('../images/Maui_2011_23 2-i.jpg');
 }
 
 .demotext {
@@ -93,7 +96,7 @@ background-image: url('../images/Maui_2011_23 2-i.jpg');
   border-radius: 10px;
   margin-right: 10px;
   margin-left: 5px;
-  margin-top: 5%;
+  margin-top: 1%;
   margin-bottom: 10%;
 
 }
@@ -107,8 +110,8 @@ background-image: url('../images/Maui_2011_23 2-i.jpg');
 
 }
 
-.contactus {border: 1px solid rgb(0,37,51);
-  font: Helvetica;
+.contactus {
+  border: 1px solid rgb(0,37,51);
   color:  rgb(204,241,255);
 
 }

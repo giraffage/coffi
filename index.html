@@ -40,50 +40,50 @@
 </head>
 <body>
 <div class="fonts">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#">C( )ffi</a>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about-us.html">About</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Filters
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#" onclick="curFilter.region='w'; reFilter(); return false">West London</a>
-          <a class="dropdown-item" href="#" onclick="curFilter.region='e'; reFilter(); return false">East London</a>
-          <a class="dropdown-item" href="#" onclick="curFilter.region='c'; reFilter(); return false">Central London</a>
-          <a class="dropdown-item" href="#" onclick="curFilter.region='n'; reFilter(); return false">North London</a>
-          <a class="dropdown-item" href="#" onclick="curFilter.region='se'; reFilter(); return false">South East London</a>
-          <a class="dropdown-item" href="#" onclick="curFilter.region=undefined; reFilter(); return false">Any region</a>
-          <hr/>
-          <a class="dropdown-item" href="#" onclick="curFilter.openLate=true; reFilter(); return false">Open Late</a>
-          <a class="dropdown-item" href="#" onclick="curFilter.openLate=undefined; reFilter(); return false">Open any time</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Your Suggestions</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact-us.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">C( )ffi</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about-us.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filters
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#" onclick="curFilter.region='w'; reFilter(); return false">West London</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.region='e'; reFilter(); return false">East London</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.region='c'; reFilter(); return false">Central London</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.region='n'; reFilter(); return false">North London</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.region='se'; reFilter(); return false">South East London</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.region=undefined; reFilter(); return false">Any region</a>
+            <hr/>
+            <a class="dropdown-item" href="#" onclick="curFilter.openLate=true; reFilter(); return false">Open Late</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.openLate=undefined; reFilter(); return false">Open any time</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Your Suggestions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-us.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </div>
 <div id="mapid" style="width: 100%; height: 100vh;"></div>
 <script>
@@ -91,6 +91,8 @@
     {name: 'Hubbard & Bell', addr:'199 - 206 High Holborn, London WC1V 7BW',
       times:'Sun-Tues 7am-12am, Wed-Sat 7am–2am', site:'http://www.hubbardandbell.com',
       openLate:true, region:'c', latlon: [51.517225, -0.122170]},
+    {name: 'Camden Coffee - Hogarth House', addr:'136 High Holborn, London WC1V 6P',
+      times:'N/A', openLate:false, region:'c', latlon: [51.517507, -0.122244]},
     {name: 'Husk', addr:'649-651 Commercial Road, Limehouse, London E14 7LW',
       times:'Mon 9am-6pm, Tue-Thu 9am-8pm, Fri 9am-6pm, Sat 10am-5pm', site:'http://www.huskcoffee.com/',
       openLate:false, region:'e', latlon: [51.512953, -0.038305]},
@@ -140,7 +142,10 @@
       openLate:true, region:'se', latlon: [51.506570, -0.088435]},
     {name: 'Starbucks Kings Cross Station', addr:'Euston Road, Ground Concourse Unit, 11aLondon, London N1 9AL',
       times:'Mon-Sat 5:30am-11pm', site:'https://www.starbucks.co.uk/store-locator/store/87135/kings-cross-station-concourse-euston-road-london-eng-n-1-9-al-gb',
-      openLate:true, region:'n', latlon: [51.531303, -0.124423]}
+      openLate:true, region:'n', latlon: [51.531303, -0.124423]},
+    {name: 'The CoffeeWorks Project', addr:'96-98 Islington High St, The Angel, London N1 8EG',
+      times:'Mon-Fr 7:30am-6pm, Sat-Sun 9am–6pm', site:'https://coffeeworksproject.com/',
+      openLate:false, region:'n', latlon: [51.534174, -0.104523]}
   ];
 
   var curFilter = {};
