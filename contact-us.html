@@ -4,11 +4,89 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <link rel="stylesheet" type="text/css" href="css/contact-us.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
+
+  <!-- Custom styles-->
+  <link rel="stylesheet" type="text/css" href="css/master-styles.css">
+
+  <!-- Jquery -->
+  <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+
+  <!-- Leaflet CSS (map) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+          integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+          crossorigin=""></script>
 </head>
 <body>
 <div class="fonts">
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">C( )ffi</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about-us.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filters
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item"  href="#" onclick="curFilter.region='w'; reFilter(); return false">West London</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.region='e'; reFilter(); return false">East London</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.region='c'; reFilter(); return false">Central London</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.region='n'; reFilter(); return false">North London</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.region='se'; reFilter(); return false">South East London</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.region=undefined; reFilter(); return false">Any region</a>
+            <hr/>
+            <a class="dropdown-item" href="#" onclick="curFilter.openLate=true; reFilter(); return false">Open Late</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.openLate=undefined; reFilter(); return false">Open any time</a>
+            <hr/>
+            <a class="dropdown-item" href="#" onclick="curFilter.socketsAvailable=true; reFilter(); return false">Sockets Available</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.socketsAvailable=undefined; reFilter(); return false">Sockets Not Guaranteed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="suggestion-page.html" tabindex="-1" aria-disabled="true">Your Suggestions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-us.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 <div>
   <h1> Contact form </h1>
 </div>

@@ -1,0 +1,56 @@
+body {
+    background-color: bisque;
+}
+
+h1 {
+    font-size: 2em;
+
+}
+
+h2 {
+    font-size: 1.2em;
+
+}
+
+.overview {
+    margin-left: 20px;
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.title {
+
+}
+
+.fonts {
+    font-family: Helvetica Neue;
+    color: black;
+}
+
+.contrast {
+
+}
+
+.bottom {
+
+}
+
+.democontainer {
+
+}
+
+.demoimage {
+
+}
+
+.demoimage1 {
+    background-image: url('../images/photo-of-izzy.jpg');
+}
+
+.demoimage2 {
+    background-image: url('../images/Maui_2011_23 2-i.jpg');
+}
+
+.demotext {
+
+}
