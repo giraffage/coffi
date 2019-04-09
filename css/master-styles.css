@@ -8,7 +8,7 @@ h1 {
     margin-right: 30px;
     text-align: justify;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     color: rgb(204,241,255);
 }
 
@@ -29,13 +29,12 @@ h2 {
 .title {
     background-color: rgb(204,241,255);
     border: solid rgb(204,241,255);
-    font-size: x-large;
     text-align: center;
     font-weight: bold;
     margin-bottom: 30px;
     border-radius: 10px;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 1%:
 }
 
@@ -66,7 +65,7 @@ h2 {
     background-color: rgb(204,241,255);
     border-radius: 10px;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 1%:
     margin-bottom: 10%;
     align-items: center;
@@ -180,3 +179,4 @@ textarea {
     margin-left: 30px;
     color: rgb(204,241,255);
 }
+
