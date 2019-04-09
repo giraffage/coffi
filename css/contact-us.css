@@ -86,11 +86,10 @@ label {
   margin-bottom: 10px;
   background-color: #f2f2f2;
   padding: 20px;
-
   width: 1000px;
   max-width: 100%;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
 /* Floating column for labels: 25% width */
