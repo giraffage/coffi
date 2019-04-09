@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Coffi</title>
   <!-- Bootstrap -->
   <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -50,7 +50,7 @@
             aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">C( )ffi</a>
+    <a class="navbar-brand" href="index.html">C( )ffi</a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
@@ -76,6 +76,7 @@
             <hr/>
             <a class="dropdown-item" href="#" onclick="curFilter.socketsAvailable=true; reFilter(); return false">Sockets Available</a>
             <a class="dropdown-item" href="#" onclick="curFilter.socketsAvailable=undefined; reFilter(); return false">Sockets Not Guaranteed</a>
+            <a class="dropdown-item" href="#" onclick="curFilter.socketsAvailable=undefined; reFilter(); return false">Sockets Either Option</a>
           </div>
         </li>
         <li class="nav-item">
@@ -183,6 +184,7 @@
     });
   }
   reFilter();
+
 
 </script>
 </body>
