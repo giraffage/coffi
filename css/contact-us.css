@@ -25,14 +25,6 @@ h2 {
   margin-left: 10px;
   margin-right: 5px;
 }
-/* changing the font for all contact form labels */
-.fonts {
-  font-size: 0.8em;
-  font-family: Helvetica Neue;
-  color: black;
-  margin-left: 2%;
-  margin-right: 2%;
-}
 
 input[type=text] {
 //styling

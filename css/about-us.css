@@ -76,7 +76,7 @@ div.contrast {
   flex-basis: auto;
   margin: 0 5%;
   border-radius: 130px;
-  background-size:cover;
+  background-size: cover;
   min-width: 150px;
   height: 150px;
 }
