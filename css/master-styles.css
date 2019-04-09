@@ -126,7 +126,7 @@ label {
     color: rgb(204,241,255);
 }
 
-.col-25 {
+.contactinputs1 {
     width: 75%;
     margin-top: 6px;
     margin-bottom: 9px;
@@ -134,14 +134,14 @@ label {
     margin-right: 30px;
 }
 
-.col-75 {
+.contactinputs2 {
     width: 75%;
     margin-top: 12px;
     margin-bottom: 12px;
     margin-left: 10px;
     margin-right: 30px;
 }
-.col-85 {
+.contactinputs2 {
     width: 100%;
     margin-top: 12px;
     margin-bottom: 12px;
