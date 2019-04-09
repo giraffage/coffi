@@ -53,8 +53,8 @@
     <a class="navbar-brand" href="#">C( )ffi</a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about-us.html">About</a>
@@ -73,7 +73,7 @@
             <hr/>
             <a class="dropdown-item" href="#" onclick="curFilter.openLate=true; reFilter(); return false">Open Late</a>
             <a class="dropdown-item" href="#" onclick="curFilter.openLate=undefined; reFilter(); return false">Open any time</a>
-          <hr/>
+            <hr/>
             <a class="dropdown-item" href="#" onclick="curFilter.socketsAvailable=true; reFilter(); return false">Sockets Available</a>
             <a class="dropdown-item" href="#" onclick="curFilter.socketsAvailable=undefined; reFilter(); return false">Sockets Not Guaranteed</a>
           </div>

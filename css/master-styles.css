@@ -34,7 +34,6 @@ h2 {
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 1%:
-    align-items: center;
 }
 
 .fonts {
@@ -159,3 +158,11 @@ textarea {
     box-sizing: border-box;
     border-radius: 10px;
           }
+
+/* styling contact.html, submit.html*/
+
+.thankyou {
+    font-size: 0.8em;
+    margin-top: 50px;
+    margin-left: 30px;
+}

@@ -90,70 +90,70 @@
   </nav>
   <h1> Cafe suggestion form </h1>
   <h2> We would love to hear about any new cafe suggestions to add to our website.
-  If you have any suggestions, please fill out the form and we will pay them a visit. </h2>
+    If you have any suggestions, please fill out the form and we will pay them a visit. </h2>
 
 
-<form action="action_page.php">
-  <div class="container">
-    <div class="row">
-      <div class="col-25">
+  <form action="action_page.php">
+    <div class="container">
+      <div class="row">
+        <div class="col-25">
 
+        </div>
+        <div class="col-25">
+          <label for="subject">The Data</label>
+        </div>
+        <div class="col-75">
+          <input type="text"
+                 id="fname"
+                 name="firstname"
+                 placeholder="Your first name..">
+        </div>
       </div>
-      <div class="col-25">
-        <label for="subject">The Data</label>
+      <div class="row">
+        <div class="col-75">
+          <input type="text"
+                 id="lname"
+                 name="lastname"
+                 placeholder="Your last name..">
+        </div>
       </div>
-      <div class="col-75">
-        <input type="text"
-               id="fname"
-               name="firstname"
-               placeholder="Your first name..">
+      <div class="row">
+        <div class="col-75">
+          <input type="text"
+                 id="lname"
+                 name="lastname"
+                 placeholder="Your email..">
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-75">
-        <input type="text"
-               id="lname"
-               name="lastname"
-               placeholder="Your last name..">
+      <div class="row">
+        <div class="col-25">
+          <label for="Cafe">The location type</label>
+        </div>
+        <div class="col-85">
+          <select id="Cafe" name="Cafe">
+            <option value="Cafe1">Cafe (open late; until at least 10pm)</option>
+            <option value="Cafe2">Cafe (open regular hours; anything before 10pm)</option>
+            <option value="Resto">Restaurant</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-75">
-        <input type="text"
-               id="lname"
-               name="lastname"
-               placeholder="Your email..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="Cafe">The location type</label>
-      </div>
-      <div class="col-85">
-        <select id="Cafe" name="Cafe">
-          <option value="Cafe1">Cafe (open late; until at least 10pm)</option>
-          <option value="Cafe2">Cafe (open regular hours; anything before 10pm)</option>
-          <option value="Resto">Restaurant</option>
-          <option value="Other">Other</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="subject">The cafe</label>
-      </div>
-      <div class="col-75">
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">The cafe</label>
+        </div>
+        <div class="col-75">
             <textarea id="subject"
                       name="subject"
                       placeholder="Your cafe (please indicate).."
                       style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <a class="submit-link" href="submit.html">Submit</a>
       </div>
     </div>
-    <div class="row">
-      <a class="submit-link" href="submit.html">Submit</a>
-    </div>
-  </div>
-</form>
+  </form>
 </div>
 </body>
 </html>
