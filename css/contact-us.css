@@ -52,8 +52,19 @@ label {
   display: inline-block;
 }
 
-/* Style the submit button */
-input[type=submit] {
+/* Style the submit button for contact us page*/
+.contact-link {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the submit button for suggestion page*/
+.submit-link {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
