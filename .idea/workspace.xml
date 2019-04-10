@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a02acddb-5c8a-41cf-9dc3-0c3d187d2650" name="Default Changelist" comment="" />
+    <list default="true" id="a02acddb-5c8a-41cf-9dc3-0c3d187d2650" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/suggestion-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/suggestion-page.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -43,20 +45,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/suggestion-page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+            <state relative-caret-position="339">
+              <caret line="83" column="50" lean-forward="true" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contact-us.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="78" column="34" selection-end-line="109" />
+            <state relative-caret-position="345">
+              <caret line="86" column="36" lean-forward="true" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -108,8 +110,8 @@
         <option value="$PROJECT_DIR$/submit.html" />
         <option value="$PROJECT_DIR$/about-us.html" />
         <option value="$PROJECT_DIR$/css/master-styles.css" />
-        <option value="$PROJECT_DIR$/suggestion-page.html" />
         <option value="$PROJECT_DIR$/contact-us.html" />
+        <option value="$PROJECT_DIR$/suggestion-page.html" />
       </list>
     </option>
   </component>
@@ -191,7 +193,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40739000" />
+    <option name="totallyTimeSpent" value="40816000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -204,6 +206,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="27" y="23" width="1413" height="567" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24712643" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -307,17 +310,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contact-us.html">
+    <entry file="file://$PROJECT_DIR$/suggestion-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="78" column="34" selection-end-line="109" />
+        <state relative-caret-position="339">
+          <caret line="83" column="50" lean-forward="true" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/suggestion-page.html">
+    <entry file="file://$PROJECT_DIR$/contact-us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+        <state relative-caret-position="345">
+          <caret line="86" column="36" lean-forward="true" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
         </state>
       </provider>
     </entry>
