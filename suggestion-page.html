@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Coffi</title>
+  <title>Suggestions</title>
   <!-- Bootstrap -->
   <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -77,58 +77,47 @@
       If you have any suggestions, please fill out the form and we will pay them a visit.</h2>
   </div>
 
-  <form action="mailto:codefirst123@gmail.com?subject=Suggestions" method="post" enctype="text/plain">
+  <form method="post" action="send_mail.php">
     <div class="container">
       <div class="row">
         <div class="contactinputs1">
-          <label for="subject">The Details</label>
+          <label for="info">The Details</label>
         </div>
         <div class="contactinputs2">
-          <input type="text"
-                 id="fname"
-                 name="firstname"
-                 placeholder="Your first name..">
+          <input type="text" id="info" name="firstname" placeholder="Your first name.." required>
         </div>
       </div>
       <div class="row">
         <div class="contactinputs2">
-          <input type="text"
-                 id="lname"
-                 name="lastname"
-                 placeholder="Your last name..">
+          <input type="text" id="info" name="lastname" placeholder="Your last name.." required>
         </div>
       </div>
       <div class="row">
         <div class="contactinputs2">
-          <input type="text"
-                 id="lname"
-                 name="lastname"
-                 placeholder="Your email..">
+          <input type="text" name="emailaddress" placeholder="Your email.." required>
         </div>
       </div>
       <div class="row">
         <div class="contactinputs1">
-          <label for="Cafe">The Location type</label>
+          <label for="cafetype">The Location type</label>
         </div>
         <div class="contactinputs3">
-          <select id="Cafe" name="Cafe">
-            <option value="Cafe1">Cafe (open late; until at least 10pm)</option>
-            <option value="Cafe2">Cafe (open regular hours; anything before 10pm)</option>
-            <option value="Resto">Restaurant</option>
-            <option value="Bar">Bar</option>
-            <option value="Other">Other</option>
+          <select id="cafetype" name="cafetype">
+            <option value="text">--</option>
+            <option value="text">Cafe (open late; until at least 10pm)</option>
+            <option value="text">Cafe (open regular hours; anything before 10pm)</option>
+            <option value="text">Restaurant</option>
+            <option value="text">Bar</option>
+            <option value="text">Other</option>
           </select>
         </div>
       </div>
       <div class="row">
         <div class="contactinputs1">
-          <label for="subject">The Cafe</label>
+          <label for="cafeinfo">The Cafe</label>
         </div>
         <div class="contactinputs2">
-            <textarea id="subject"
-                      name="subject"
-                      placeholder="Your cafe (please indicate).."
-                      style="height:200px"></textarea>
+            <textarea id="cafeinfo" name="cafeinfo" placeholder="Your cafe (please indicate).." style="height:200px"></textarea>
         </div>
       </div>
       <div class="row">
