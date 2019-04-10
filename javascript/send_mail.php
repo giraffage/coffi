@@ -1,4 +1,6 @@
 <?php
+
+    var str = ""
     /*
     This first bit sets the email address that you want the form to be submitted to.
     You will need to change this value to a valid email address that you can access.
@@ -9,9 +11,9 @@
 This bit sets the URLs of the supporting pages.
 If you change the names of any of the pages, you will need to change the values here.
 */
-$feedback_page = "suggestion-page.html";
-$error_page = "error-page.html";
-$thankyou_page = "submit.html";
+$suggestionpage = "suggestion-page.html";
+$errorpage = "error-page.html";
+$submit = "submit.html";
 
 /*
 This next bit loads the form field data into variables.
@@ -52,6 +54,10 @@ function isInjected($str) {
     }
 }
 
+function empty () {}
+
+function join () {}
+
 // If the user tries to access this script directly, redirect them to the feedback form,
 if (!isset($_REQUEST['emailaddress'])) {
     header( "Location: $suggestion-page.html" );
@@ -67,7 +73,7 @@ If email injection is detected, redirect to the error page.
 If you add a form field, you should add it here.
 */
 else if ( isInjected($firstname) || isInjected($lastname)|| isInjected($emailaddress) || isInjected($cafetype) || isInjected($cafeinfo) ) {
-    header( "Location: $error-page" );
+    header( "Location: $errorpage" );
 }
 
 // If we passed all previous tests, send the email then redirect to the thank you page.

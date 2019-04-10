@@ -72,37 +72,36 @@
     <h1> Contact form </h1>
   </div>
   <div>
-    <h2> Please feel free to reach out about any questions... or even just to say hi! </h2>
+    <h2>Please feel free to reach out about any questions... or even just to say hi!</h2>
   </div>
-  <div class="container">
-  <form action="mailto:codefirst123@gmail.com?subject=Enquiry" method="post" enctype="text/plain">
-        <div class="container">
-          <div class="row">
-            <div class="contactinputs2">
-              <input type="text" placeholder="Your first name..">
-            </div>
-          </div>
-          <div class="row">
-            <div class="contactinputs2">
-              <input type="text" placeholder="Your last name..">
-            </div>
-          </div>
-          <div class="row">
-            <div class="contactinputs2">
-              <input type="text" placeholder="Your email..">
-            </div>
-          </div>
-          <div class="row">
-            <div class="contactinputs2">
-              <textarea name="textarea" rows="10" cols="50" placeholder="Your comments.."></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <a class="submit-link" href="contact.html">Submit</a>
-          </div>
-        </div>
-  </div>
-  </form>
 
+  <form method="post" action="send_mail.php">
+    <div class="container">
+      <div class="row">
+        <div class="contactinputs2">
+          <input type="text" name="firstname" placeholder="Your first name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="contactinputs2">
+          <input type="text" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="contactinputs2">
+          <input type="text" name="emailaddress" placeholder="Your email..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="contactinputs2">
+          <textarea name="cafeinfo" rows="10" cols="50" placeholder="Your comments.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <a class="submit-link" href="contact.html">Submit</a>
+      </div>
+    </div>
+  </form>
+</div>
 </body>
 </html>
