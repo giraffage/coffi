@@ -128,7 +128,7 @@ label {
 
 .contactinputs1 {
     width: 75%;
-    margin-top: 6px;
+    margin-top: 12px;
     margin-bottom: 9px;
     margin-left: 10px;
     margin-right: 30px;
@@ -141,7 +141,7 @@ label {
     margin-left: 10px;
     margin-right: 30px;
 }
-.contactinputs2 {
+.contactinputs3 {
     width: 100%;
     margin-top: 12px;
     margin-bottom: 12px;
@@ -169,11 +169,22 @@ textarea {
     background-color: rgb(187,205,212);
 }
 
-/* styling contact.html, submit.html*/
+/* styling contact-success.html, suggestions-success.html*/
 
 .thankyou {
     font-size: 0.8em;
     margin-top: 50px;
-    margin-left: 30px;
+    margin-left: 50px;
     color: rgb(204,241,255);
+}
+
+/*javascript button error page*/
+.javabutton {
+    padding: 8px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    margin-left: 1px;
+    float: left;
 }

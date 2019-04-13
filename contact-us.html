@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Coffi</title>
+  <title>Contact Us</title>
   <!-- Bootstrap -->
   <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -71,39 +71,37 @@
   <div>
     <h1> Contact form </h1>
   </div>
-
   <div>
-    <h2> Please feel free to reach out about any questions... or even just to say hi! </h2>
+    <h2>Please feel free to reach out about any questions... or even just to say hi!</h2>
   </div>
-  <div class="container">
-    <form action="action_page.php">
 
+  <form method="post">
+    <div class="container">
       <div class="row">
         <div class="contactinputs2">
-      <input type="text" placeholder="Your first name..">
+          <input type="text" name="firstname" placeholder="Your first name..">
         </div>
       </div>
       <div class="row">
         <div class="contactinputs2">
-      <input type="text" placeholder="Your last name..">
+          <input type="text" name="lastname" placeholder="Your last name..">
         </div>
       </div>
       <div class="row">
         <div class="contactinputs2">
-<input type="text" placeholder="Your email..">
+          <input type="text" name="emailaddress" placeholder="Your email..">
         </div>
       </div>
       <div class="row">
         <div class="contactinputs2">
-      <textarea name="textarea" rows="10" cols="50" placeholder="Your comments.."></textarea>
+          <textarea name="cafeinfo" rows="10" cols="50" placeholder="Your comments.." style="height:200px"></textarea>
         </div>
       </div>
       <div class="row">
-        <a class="submit-link" href="contact.html">Submit</a>
+        <a class="submit-link" href="contact-success.html">Submit</a>
       </div>
-      </div>
-  </div>
+    </div>
   </form>
-
+</div>
 </body>
 </html>
